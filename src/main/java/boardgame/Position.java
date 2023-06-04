@@ -4,10 +4,6 @@ public class Position {
     private int row;
     private int column;
     
-    public void setValues(int column, int row) {
-        
-    }
-
     public Position(int column, int row) {
         this.row = row;
         this.column = column;
@@ -29,6 +25,10 @@ public class Position {
         this.column = column;
     }
     
+    public void setValues(int row, int column) {
+        this.row = row;
+        this.column = column;
+    }
     @Override
     public String toString() {
        return column + ", " + row;
